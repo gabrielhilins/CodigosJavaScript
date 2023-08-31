@@ -15,7 +15,7 @@ function calcularDesempenho(media) {
 // Loop do menu de opções
 while (true) {
   console.log("\nMenu de Opções do nosso Sistema Acadêmico:");
-  console.log("1. Cadastrar Aluno");
+  console.log("1. Cadastrar Aluno(a");
   console.log("2. Cadastrar Notas");
   console.log("3. Exibir Boletim");
   console.log("4. Sair");
@@ -26,14 +26,14 @@ while (true) {
   switch (opcao) {
     // Caso o usuário digite 1, irá realizar o seguinte código
     case 1:
-      const nomeAluno = prompt("Digite o nome do aluno:"); 
+      const nomeAluno = prompt("Digite o nome do(a) aluno(a):"); 
       alunos.push({ nome: nomeAluno, notas: [] }); // o código está cadastrando um novo aluno (nomeAluno) no array alunos com o nome fornecido pelo usuário e um array vazio de notas. 
       console.log(`Aluno "${nomeAluno}" cadastrado com sucesso.`); // resgatando o nomeAluno digitado pelo usuário
       break;
 
     // Caso o usuário digite 2, irá realizar o seguinte código
     case 2:
-      const nomeAlunoNotas = prompt("Digite o nome do aluno para cadastrar notas:");
+      const nomeAlunoNotas = prompt("Digite o nome do(a) aluno(a) para cadastrar notas:");
       const aluno = alunos.find((a) => a.nome === nomeAlunoNotas); // o método "find" proura um aluno no array "alunos" com base no nome que foi digitado na variável "nomeAlunoNotas"
 
       // Se aluno for verdadeiro, ele irá fazer o seguinte código:
@@ -53,13 +53,13 @@ while (true) {
         console.log("Notas cadastradas com sucesso.");
         // Se aluno não for verdadeiro, faça o código abaixo
       } else {
-        console.log("Aluno não encontrado. Por favor, digite o nome de um aluno já cadastrado");
+        console.log("Aluno(a) não encontrado. Por favor, digite o nome de um(a) aluno(a) já cadastrado(a");
         console.log("Caso não tenha cadastrado ainda, cadastre um aluno no menu de opções");}
       break;
 
     // Caso o usuário digite 3, irá fazer este código:
     case 3:
-      const nomeAlunoBoletim = prompt("Digite o nome do aluno para exibir o boletim:"); 
+      const nomeAlunoBoletim = prompt("Digite o nome do(a) aluno(a) para exibir o boletim:"); 
       const alunoBoletim = alunos.find((a) => a.nome === nomeAlunoBoletim); // o método find procura dentro do objeto alunos o nome digitado na variável "nomeAlunoBoletim"
 
       // Se alunoboletim for verdadeiro, faça o seguinte código
@@ -72,7 +72,7 @@ while (true) {
         console.log(`Nome: ${alunoBoletim.nome}`); 
         console.log(`Notas: ${alunoBoletim.notas.join(", ")}`);
         console.log(`Média: ${media}`);
-        console.log(`Status: ${desempenho}`);
+        console.log(`Desempenho: ${desempenho}`);
 
       // Se alunoBoletim não for verdadeiro, exibe na tela que "Aluno não encontrado"
       } else {
