@@ -70,7 +70,7 @@ while (true) {
 
         // Exibição das informações adquiridas do aluno
         console.log(`Nome: ${alunoBoletim.nome}`); 
-        console.log(`Notas: ${alunoBoletim.notas.join(", ")}`);
+        console.log(`Notas arredondadas: ${alunoBoletim.notas.join(", ")}`);
         console.log(`Média: ${media}`);
         console.log(`Desempenho: ${desempenho}`);
 
