@@ -28,7 +28,7 @@ while (true) {
     case 1:
       const nomeAluno = prompt("Digite o nome do(a) aluno(a):"); 
       alunos.push({ nome: nomeAluno, notas: [] }); // o código está cadastrando um novo aluno (nomeAluno) no array alunos com o nome fornecido pelo usuário e um array vazio de notas. 
-      console.log(`Aluno "${nomeAluno}" cadastrado com sucesso.`); // resgatando o nomeAluno digitado pelo usuário
+      console.log(`Aluno(a) "${nomeAluno}" cadastrado com sucesso.`); // resgatando o nomeAluno digitado pelo usuário
       break;
 
     // Caso o usuário digite 2, irá realizar o seguinte código
