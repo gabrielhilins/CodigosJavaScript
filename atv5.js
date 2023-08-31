@@ -15,7 +15,7 @@ function calcularDesempenho(media) {
 // Loop do menu de opções
 while (true) {
   console.log("\nMenu de Opções do nosso Sistema Acadêmico:");
-  console.log("1. Cadastrar Aluno(a");
+  console.log("1. Cadastrar Aluno(a)");
   console.log("2. Cadastrar Notas");
   console.log("3. Exibir Boletim");
   console.log("4. Sair");
