@@ -37,7 +37,7 @@ function deletarLivro() {
   const livroCadastrado = biblioteca.find((livro) => livro.id === id);
 
   if (livroCadastrado) { // Se o livro tiver cadastrado, faça o seguinte código:
-    const index = biblioteca.indexOf(livroCadastrado); // sando método indexOf para encontrar índice(posição) do livroCadastrado no array "biblioteca"
+    const index = biblioteca.indexOf(livroCadastrado); // usando método indexOf para encontrar índice(posição) do livroCadastrado no array "biblioteca"
     biblioteca.splice(index, 1); // usando método splice para remover o livroCadastrado digitado nessa função e encontrado no index do array "biblioteca"
     console.log(`O Livro "${id}" foi deletado com sucesso!`);
   } else {
